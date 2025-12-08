@@ -1,0 +1,19 @@
+; comment 
+
+.text "hello wien language"
+
+.var Number : 10
+
+.var plusplusNumber : Number+20
+.var mulNumber : Number*20
+
+.text "Number plus: %plusplusNumber"
+.text "Number mul: %mulNumber"
+
+.comp test {
+    sources = test.c 
+    output = test 
+    cflags = -Wall 
+}
+
+.CALL test 
